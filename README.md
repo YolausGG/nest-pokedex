@@ -24,25 +24,21 @@ docker-compose up -d
 ```
 ---
 5. Clone the __.env.template__ file and rename the copy to __.env__ file
----
+
 6. Fill in the environment variables defined in the __.env__ file
----
+
 7. Run the application in developer mode:
 ```
-npm start:dev
+npm run start:dev
 ```
 ---
 8. Rebuild the database from the seed
 ```
 http://localhost:3000/api/v2/seed
 ```
-
-
-
 ## Stack used
 * MongoDB
 * Nest
-
 
 # Production Build 
 1. Create the ```.env.prod``` file
@@ -51,8 +47,6 @@ http://localhost:3000/api/v2/seed
 ```
 docker-compose -f docker-compose.prod.yaml --env-file .env.prod up --build
 ```
-
-
 # Notes
 Heroku redeploy no changes:
 ```
